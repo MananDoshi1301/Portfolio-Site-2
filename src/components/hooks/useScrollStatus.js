@@ -1,7 +1,7 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 const useScrollStatus = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const getDocHeight = () => {
     return Math.max(
@@ -15,10 +15,10 @@ const useScrollStatus = () => {
     const scrollTop = window.pageYOffset; // how much the user has scrolled by
     const winHeight = window.innerHeight;
     const docHeight = getDocHeight();
-    const totalDocScrollLength = docHeight - winHeight;    
+    const totalDocScrollLength = docHeight - winHeight;
     const scrollValue = Math.floor(scrollTop / totalDocScrollLength * 100);
-    
-    setScrollPosition(scrollValue); 
+
+    setScrollPosition(scrollValue);
   }
 
   const listenToScrollEvent = () => {
@@ -30,9 +30,9 @@ const useScrollStatus = () => {
     });
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     listenToScrollEvent();
-  },[scrollPosition])
+  }, [scrollPosition, listenToScrollEvent])
 
   return scrollPosition;
 }
