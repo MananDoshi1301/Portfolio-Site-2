@@ -61,23 +61,23 @@ const Footer = () => {
                       ></i>
                       <div className="footer-shadow footer-shadow-2"></div>
                     </div>
-                    <div className='footer-social-div'>
+                    {/* <div className='footer-social-div'>
                       <i
                         id='footer-twitter'
                         className='fab fa-twitter footer-social-link'
                         onClick={() => linkRedirect(twitter)}
                       ></i>
                       <div className="footer-shadow footer-shadow-3"></div>
-                    </div>
+                    </div> */}
                   </span>
                   Doshi
                 </div>
               </div>
             </div>
             <div
-              className='copyrightDiv text-center mb-5'              
+              className='copyrightDiv text-center mb-5'
             >
-              Copyrights @ 2021 MananDoshi. All rights reserved.
+              Copyrights @2024 Manan Doshi. All rights reserved.
               {/* <a href="https://www.vecteezy.com/"> PNGs by Vecteezy</a> */}
             </div>
           </div>
