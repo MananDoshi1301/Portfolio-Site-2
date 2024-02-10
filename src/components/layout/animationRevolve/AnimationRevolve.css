@@ -1,0 +1,15 @@
+.revolve-mainDiv{
+    /* position: relative; */
+}
+
+.revolve-subDiv{    
+    
+}
+
+.revolve-subDiv > img{
+    position: absolute;            
+    right: -20%;
+    max-width: 40%;
+    z-index: -1;
+    transition:all 0.2s ease;
+}
