@@ -21,18 +21,18 @@ const useScrollStatus = () => {
     setScrollPosition(scrollValue);
   }
 
-  const listenToScrollEvent = () => {
-    document.addEventListener("scroll", () => {
-      requestAnimationFrame(() => {
-        // this.calculateScrollDistance();
-        calculateScrollDistance();
-      });
-    });
-  }
 
   useEffect(() => {
+    const listenToScrollEvent = () => {
+      document.addEventListener("scroll", () => {
+        requestAnimationFrame(() => {
+          // this.calculateScrollDistance();
+          calculateScrollDistance();
+        });
+      });
+    }
     listenToScrollEvent();
-  }, [scrollPosition, listenToScrollEvent])
+  }, [scrollPosition])
 
   return scrollPosition;
 }
