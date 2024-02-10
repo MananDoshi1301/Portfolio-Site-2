@@ -1,4 +1,4 @@
-.footer > div {
+.footer>div {
   margin-top: 10em;
   /* padding: 5em 2em; */
 }
@@ -19,6 +19,7 @@
 }
 
 .copyrightDiv {
+  font-size: 1.1em !important;
   font-size: 1.5em;
 }
 
@@ -26,28 +27,28 @@
   width: 37em;
 }
 
-.w-30{
-  width: 23% !important;
+.w-30 {
+  width: 40% !important;
 }
 
-.star{
+.star {
   animation: starMovement 2s infinite ease-in-out;
 }
 
-.star-1{
+.star-1 {
   animation-duration: 2s;
 }
 
-.star-3{
+.star-3 {
   animation-duration: 2.5s;
 }
 
-.star-2{
+.star-2 {
   animation-duration: 3s;
 }
 
 @keyframes starMovement {
-  50%{
+  50% {
     transform: translate(0, -5px);
   }
 }
@@ -56,13 +57,13 @@
   font-size: 0.23em;
 }
 
-.footer-social-div{
+.footer-social-div {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.footer-social-link{
+.footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,37 +74,37 @@
   animation: footerIconMovement 2s infinite ease-in-out;
 }
 
-#footer-mail{
+#footer-mail {
   background-color: #F7A000;
   animation-duration: 2.5s;
 }
 
-#footer-mail:hover{
+#footer-mail:hover {
   color: #F7A000;
   background: white;
 }
 
-#footer-linkedin{
+#footer-linkedin {
   background-color: #0077b5;
   animation-duration: 2s;
 }
 
-#footer-linkedin:hover{
+#footer-linkedin:hover {
   color: #0077b5;
   background: white;
 }
 
-#footer-twitter{
+#footer-twitter {
   background-color: #1DA1F2;
   animation-duration: 2.5s;
 }
 
-#footer-twitter:hover{
+#footer-twitter:hover {
   color: #1DA1F2;
   background-color: white;
 }
 
-.footer-shadow{
+.footer-shadow {
   width: 1.2em;
   height: 0.3em;
   background: gray;
@@ -113,26 +114,26 @@
   animation: footerShadowMovement 2s infinite ease-in-out;
 }
 
-.footer-shadow-1{
+.footer-shadow-1 {
   animation-duration: 2.5s;
 }
 
-.footer-shadow-2{
+.footer-shadow-2 {
   animation-duration: 2s;
 }
 
-.footer-shadow-3{
+.footer-shadow-3 {
   animation-duration: 2.5s;
 }
 
 @keyframes footerIconMovement {
-  50%{
+  50% {
     transform: translate(0, -2px);
   }
 }
 
 @keyframes footerShadowMovement {
-  50%{    
+  50% {
     filter: blur(5px);
   }
 }

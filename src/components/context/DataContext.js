@@ -107,6 +107,13 @@ const data = {
       { title: "GitHub", link: 'https://github.com/MananDoshi1301', keyword: "github", icon_name: "fab fa-github" },
     ]
   },
+
+
+  // Footer Data(Footer.js)
+  footer_data: {
+    email_link: "manandoshi1301@gmail.com",
+    linkedin: "http://www.linkedin.com/in/manandoshi1301"
+  }
 }
 
 export const DataContext = createContext(data);

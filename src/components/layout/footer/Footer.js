@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DataContext } from '../../context/DataContext';
 import './Footer.css';
 import logo from '../../images/logo5.png';
 import star from '../../images/star.webp';
@@ -8,9 +9,9 @@ AOS.init();
 
 const Footer = () => {
 
-  const linkedin = 'http://www.linkedin.com/in/manandoshi1301';
-  const twitter = 'https://twitter.com/Manan_Doshi1301';
-  const email = 'mailto:manandoshi1301@gmail.com';
+  const footer_data = useContext(DataContext).footer_data;
+  const linkedin = footer_data.linkedin;
+  const email = footer_data.email_link;
 
   const linkRedirect = link => {
     window.open(link, '_blank');
@@ -45,14 +46,16 @@ const Footer = () => {
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <span className='footer-social d-flex justify-content-between gap-5'>
+
                     <div className='footer-social-div'>
                       <i
                         id='footer-mail'
                         className='fas fa-envelope footer-social-link'
-                        onClick={() => linkRedirect(email)}
+                        onClick={() => linkRedirect(`mailto:${email}`)}
                       ></i>
                       <div className="footer-shadow footer-shadow-1"></div>
                     </div>
+
                     <div className='footer-social-div'>
                       <i
                         id='footer-linkedin'
@@ -61,14 +64,7 @@ const Footer = () => {
                       ></i>
                       <div className="footer-shadow footer-shadow-2"></div>
                     </div>
-                    {/* <div className='footer-social-div'>
-                      <i
-                        id='footer-twitter'
-                        className='fab fa-twitter footer-social-link'
-                        onClick={() => linkRedirect(twitter)}
-                      ></i>
-                      <div className="footer-shadow footer-shadow-3"></div>
-                    </div> */}
+
                   </span>
                   Doshi
                 </div>
