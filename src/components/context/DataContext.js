@@ -96,6 +96,17 @@ const data = {
     },
   ],
 
+  // Connect Data(ContactForm.js)
+  contact_form: {
+    display_email: "manandoshi1301@gmail.com",
+    personal_description: <>I love working on Web and System Architectures. I have the ability to teach. I spend my remaining time in music, personal fitness, sports and outdoors!</>,
+
+    social_links: [
+      { title: "Resume", link: 'https://drive.google.com/file/d/1_n8AlpvR3uaemd7O_LIttMzk2_irPnTa/view?usp=sharing', keyword: "resume", icon_name: "fas fa-file-alt" },
+      { title: "LinkedIn", link: 'http://www.linkedin.com/in/manandoshi1301', keyword: "linkedin", icon_name: "fab fa-linkedin-in" },
+      { title: "GitHub", link: 'https://github.com/MananDoshi1301', keyword: "github", icon_name: "fab fa-github" },
+    ]
+  },
 }
 
 export const DataContext = createContext(data);
