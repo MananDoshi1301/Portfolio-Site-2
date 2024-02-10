@@ -16,8 +16,8 @@
   /* animation: wave 2s infinite ease-in-out; */
 }
 
-.scrollpop > div {
-  padding: 1em;
+.scrollpop>div {
+  padding: 0.5em;
   cursor: pointer;
 }
 
