@@ -13,7 +13,7 @@ const BannerTyped = () => {
         <ReactTyped
           startWhenVisible
           strings={typed_strings}
-          typeSpeed={65}
+          typeSpeed={75}
           backSpeed={50}
           backDelay={1300}
           loop

@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { DataContext } from '../../context/DataContext';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
-import { projects } from '../../Data/WorkData';
 import './WorkCarousel.css';
 import laptop from '../../images/laptop3.png';
 import video from '../../images/toyStore.webm';
 
 const WorkCarousel = () => {
 
+  const data = useContext(DataContext);
+  const projects = data.projects;
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(projects.length);
   const [progress, setProgress] = useState((1 / totalSlides) * 100);
@@ -105,9 +107,9 @@ const WorkCarousel = () => {
                   <div className='projectDetails'>
                     <h1 className='projectDetails-title'>{project.title}</h1>
                     <h3 className='projectDetails-type'>
-                      {project.type},{' '}
+                      {project.type}{project.year && <>,{' '}</>}
                       <span className='projectDetails-year'>
-                        {project.year}
+                        {project.year && project.year}
                       </span>
                     </h3>
                     <div className='d-flex gap-3'>
