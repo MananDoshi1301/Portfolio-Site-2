@@ -12,7 +12,6 @@ const data = {
   banner_typed_strings: [
     "Hi!<br>I am <strong><u>Manan</u></strong>...", "I am a passionate<br><u>Software Developer</u>",
   ],
-  // "<u>Parallel Computing</u> <u>Compilers</u> are my passion!"
 
   // About me content (AboutContent.js)
   about_content: <>
@@ -27,6 +26,38 @@ const data = {
       Lately I have been juggling with <span className='highlight-word'>React.JS, Python</span>, and <span className='highlight-word'>AWS</span> like a tech wizard. I've even danced with <span className='highlight-word'>Docker</span> and <span className='highlight-word'>Kubernetes</span> for some orchestration magic. Let's link up and geek out together! 🚀
     </div>
   </>,
+
+  // Experience (Experience.js)
+  experience: [
+    {
+      title: "Full Stack Web Development Intern",
+      company_name: "Social Comment Pvt. Ltd.", company_link: "",
+      location: "Remote",
+      role_info: "", //Beta Tooltip
+      from: "Oct 2020", to: "June 2021"
+    },
+    {
+      title: "CDAC, India",
+      company_name: "Social Comment Pvt. Ltd.", company_link: "",
+      location: "Mumbai, India",
+      role_info: "", //Beta Tooltip
+      from: "Oct 2020", to: "June 2021"
+    },
+    {
+      title: "CDAC, India",
+      company_name: "Social Comment Pvt. Ltd.", company_link: "",
+      location: "Mumbai, India",
+      role_info: "", //Beta Tooltip
+      from: "Oct 2020", to: "June 2021"
+    },
+    {
+      title: "CDAC, India",
+      company_name: "Social Comment Pvt. Ltd.", company_link: "",
+      location: "Mumbai, India",
+      role_info: "", //Beta Tooltip
+      from: "Oct 2020", to: "June 2021"
+    },
+  ],
 
   // About me image (AboutContent.js)
   about_img_link: about_img,
@@ -102,7 +133,7 @@ const data = {
     personal_description: <>I love working on Web and System Architectures. I have the ability to teach. I spend my remaining time in music, personal fitness, sports and outdoors!</>,
 
     social_links: [
-      { title: "Resume", link: 'https://drive.google.com/file/d/1_n8AlpvR3uaemd7O_LIttMzk2_irPnTa/view?usp=sharing', keyword: "resume", icon_name: "fas fa-file-alt" },
+      { title: "Resume", link: 'https://drive.google.com/file/d/1ufGAPtUvJubOJV04NnuId00GBXKNBFrE/view?usp=sharing', keyword: "resume", icon_name: "fas fa-file-alt" },
       { title: "LinkedIn", link: 'http://www.linkedin.com/in/manandoshi1301', keyword: "linkedin", icon_name: "fab fa-linkedin-in" },
       { title: "GitHub", link: 'https://github.com/MananDoshi1301', keyword: "github", icon_name: "fab fa-github" },
     ]

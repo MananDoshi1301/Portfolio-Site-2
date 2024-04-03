@@ -9,6 +9,7 @@ import Scrollpop from './components/layout/scrollpop/Scrollpop';
 import ProgressBar from './components/layout/progressbar/ProgressBar';
 import AnimationRevolve from './components/layout/animationRevolve/AnimationRevolve';
 import SmallScreen from './components/layout/SmallScreen/SmallScreen';
+import Experience from './components/layout/experience/Experience';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Banner />
         <AnimationRevolve />
         <Profile />
+        {/* <Experience /> */}
         <Work />
         <Contact />
         <Footer />
